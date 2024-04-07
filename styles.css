@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+a, button{
+	all: unset;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -54,12 +58,35 @@ table {
 /* --------------------------------Styles ----------------------------- */ 
 
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url(fonts/transfonter.org-unpack-20240406-021438/HelveticaNeue-01.ttf);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url(fonts/HelveticaNeue-01.ttf);
 }
+
+
+/* ------ Mobile first styling ----- */ 
 
 body{
     font-family: "Helvetica Neue";
-    font-size: 100px;
-	color: blue;
+	background-color: var(--main-background-color);
+	color: var(--main-font-color);
+
+}
+	
+:root{
+	--main-background-color: #FEF8F0;
+	--main-font-color: black;
+	--footer-color: #252525;
+	--light-text: #FFFEF2;
+}	
+
+h1{
+	font-weight: 300;
+	font-size: 2em;
+}
+
+
+/* Footer styling */ 
+footer{
+	background-color: var(--footer-color);
+	color: var(--light-text);
 }
