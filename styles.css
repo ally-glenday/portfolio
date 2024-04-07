@@ -78,15 +78,22 @@ body{
 	--footer-color: #252525;
 	--light-text: #FFFEF2;
 }	
+/* Header nav */ 
+header{
+
+}
 
 h1{
 	font-weight: 300;
 	font-size: 2em;
 }
 
-
 /* Footer styling */ 
 footer{
 	background-color: var(--footer-color);
 	color: var(--light-text);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
 }
