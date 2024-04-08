@@ -64,6 +64,14 @@ a, button{
 
 
 /* ------ Mobile first styling ----- */ 
+/* (iPhone SE, 320px x 568) */ 
+
+:root{
+	--main-background-color: #FEF8F0;
+	--main-font-color: black;
+	--footer-color: #252525;
+	--light-text: #FFFEF2;
+}	
 
 body{
     font-family: "Helvetica Neue";
@@ -72,28 +80,45 @@ body{
 
 }
 	
-:root{
-	--main-background-color: #FEF8F0;
-	--main-font-color: black;
-	--footer-color: #252525;
-	--light-text: #FFFEF2;
-}	
-/* Header nav */ 
-header{
-
+/* Header Nav */ 
+header div{
+	display: flex;
 }
 
 h1{
 	font-weight: 300;
 	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+/* CSS classes */ 
+
+.display-none{
+	display: none;
+}
+
+.display-block{
+	display: block;
+}
+
+/* Links */ 
+button:hover{
+	cursor: pointer;
+}
+/* Japanese langauage link */ 
+.japanese{
+	border: #252525 1.5px solid;
+}
+
+/* Buttons */
+button:hover{
+	cursor: pointer;
 }
 
 /* Footer styling */ 
 footer{
 	background-color: var(--footer-color);
 	color: var(--light-text);
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	width: 100vw;
 }
+
