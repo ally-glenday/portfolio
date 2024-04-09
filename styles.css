@@ -114,6 +114,13 @@ button:hover{
 button:hover{
 	cursor: pointer;
 }
+.hamburger-nav{
+	background-image: url(svg/hamburger-icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 2.5em;
+	height: 2.5em;
+}
 
 /* Footer styling */ 
 footer{

@@ -1,5 +1,4 @@
 function toggleHamburgerMenu(){
-    let hamburgerMenu = document.getElementsByClassName("hamburger-nav");
-    hamburgerMenu.style.display = "block";
-
+    document.getElementById("hamburger-nav").classList.toggle('display-block');
+    
 }
