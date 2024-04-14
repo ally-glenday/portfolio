@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a class="japanese" lang="ja-jp" href="">日本語</a>
-            <p>Alasdair Glenday</p>
-            <button class="hamburger-nav" onclick="toggleHamburgerMenu()"></button>      
-            <nav id="hamburger-nav" class="display-none">
-                <ul>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h1>Creative Developer from London, based in Osaka.</h1> 
-        <button>Learn more</button>
-        <nav>
+    <div id="page-container">
+        <header>
+            <div>
+                <a class="japanese" lang="ja-jp" href="">日本語</a>
+                <p>Alasdair Glenday</p>
+                <button class="hamburger-nav" onclick="toggleHamburgerMenu()"></button>      
+            </div>
+        </header>
+        <hr>
+        <nav id="hamburger-nav" class="display-none">
             <ul>
-                <li><a href="">About</a></li><p>01</p>
-                <li><a href="">Work</a></li><p>02</p>
-                <li><a href="">Contact</a></li><p>03</p>
+                <li>About</li>
+                <li>Work</li>
+                <li>Contact</li>
             </ul>
-        </nav>   
-    </main>
-    <footer>
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
-        <p>alasdair-glenday@hotmail.co.uk</p>
-    </footer>
+        </nav>
+        <main>
+            <h1>Creative Developer from London, based in Osaka.</h1> 
+            <button>Learn more</button>
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li><p>01</p>
+                    <li><a href="">Work</a></li><p>02</p>
+                    <li><a href="">Contact</a></li><p>03</p>
+                </ul>
+            </nav>   
+        </main>
+        <footer>
+            <li>About</li>
+            <li>Work</li>
+            <li>Contact</li>
+            <p>alasdair-glenday@hotmail.co.uk</p>
+        </footer>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

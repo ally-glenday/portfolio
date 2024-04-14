@@ -77,12 +77,25 @@ body{
     font-family: "Helvetica Neue";
 	background-color: var(--main-background-color);
 	color: var(--main-font-color);
-
+}
+/* Sets a container so the footer stays at the bottom */ 
+#page-container{
+	position: relative;
+	min-height: 100vh;
 }
 	
 /* Header Nav */ 
 header div{
 	display: flex;
+	justify-content: space-between;
+}
+
+header div p{
+	text-transform: uppercase;
+}
+
+hr{
+	width: 90vw;
 }
 
 h1{
@@ -121,11 +134,17 @@ button:hover{
 	width: 2.5em;
 	height: 2.5em;
 }
-
+#hamburger-nav{
+	font-size: 5em;
+	width: 100vw;
+	height: 100vh;
+}
 /* Footer styling */ 
 footer{
 	background-color: var(--footer-color);
 	color: var(--light-text);
+	position: absolute;
+	bottom: 0;
 	width: 100vw;
 }
 
