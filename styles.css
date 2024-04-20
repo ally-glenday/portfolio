@@ -107,9 +107,13 @@ hr{
 }
 
 h1{
-	font-weight: 300;
+	/* font-weight: 300; */
 	font-size: 1.8em;
 	margin-bottom: 1em;
+}
+
+img[src="svg/arrow-right.svg"]{
+	transform: rotate(45deg);
 }
 
 /* CSS classes */ 
@@ -126,6 +130,11 @@ h1{
 button:hover{
 	cursor: pointer;
 }
+
+main nav a{
+	font-size: 2em;
+}
+
 /* Japanese langauage link */ 
 .japanese{
 	border: #252525 1px solid;
@@ -142,6 +151,7 @@ button:hover{
 main button{
 	font-size: 1em;
 	text-align: center;
+	text-transform: capitalize;
 	border: #252525 solid 1px;
 	border-radius: 5em;
 	padding: 8% 5%;
