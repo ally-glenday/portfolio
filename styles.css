@@ -108,8 +108,20 @@ hr{
 
 h1{
 	/* font-weight: 300; */
-	font-size: 1.8em;
+	font-size: 3em;
 	margin-bottom: 1em;
+}
+
+main h1 ~ p{
+	font-size: 1.5em;
+	color: #444343;
+	margin-bottom: 2em;
+	
+}
+
+main p ~ a{
+	display: flex;
+	margin-bottom: 5em;
 }
 
 main nav ul li{
@@ -171,22 +183,23 @@ main nav a{
 button:hover{
 	cursor: pointer;
 }
-main h2 ~ button{
-	font-size: 1em;
+main p ~ a{
+	/* font-size: 1em;
 	text-align: center;
 	text-transform: capitalize;
 	border: #252525 solid 1px;
 	border-radius: 5em;
+	margin: 5%;
 	padding: 8% 5%;
-	width: 60%;
+	width: 60%; */
 }
 
 .hamburger-nav{
-	background-image: url(svg/hamburger-icon.svg);
+	background-image: url(svg/hamburger-two-lines.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 2.5em;
-	height: 2.5em;
+	width: 1.5em;
+	height: 1em;
 	margin: 5%;
 }
 #hamburger-nav{
