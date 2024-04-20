@@ -108,17 +108,18 @@ hr{
 
 h1{
 	/* font-weight: 300; */
-	font-size: 3em;
-	margin-bottom: 1em;
+	font-size: 2.5em;
+	/* text-transform: uppercase; */
+	margin-bottom: .5em;
 }
 
 main h1 ~ p{
-	font-size: 1.5em;
-	color: #444343;
-	margin-bottom: 2em;
+	font-size: 2em;
+	color: #78786E;
+	margin-bottom: 8em;
 	
 }
-
+/* Learn more */ 
 main p ~ a{
 	display: flex;
 	margin-bottom: 5em;
@@ -173,8 +174,8 @@ main nav a{
 /* Japanese langauage link */ 
 .japanese{
 	border: #252525 1px solid;
-	font-size: .6em;
-	padding: 2%;
+	font-size: .8em;
+	padding: 3%;
 	margin: 5%;
 	
 }
@@ -183,22 +184,23 @@ main nav a{
 button:hover{
 	cursor: pointer;
 }
-main p ~ a{
-	/* font-size: 1em;
+
+/* main p ~ a{
+	font-size: 1em;
 	text-align: center;
 	text-transform: capitalize;
 	border: #252525 solid 1px;
 	border-radius: 5em;
 	margin: 5%;
 	padding: 8% 5%;
-	width: 60%; */
-}
+	width: 60%;
+} */
 
 .hamburger-nav{
 	background-image: url(svg/hamburger-two-lines.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1.5em;
+	width: 2em;
 	height: 1em;
 	margin: 5%;
 }
@@ -209,8 +211,15 @@ main p ~ a{
 }
 /* Footer styling */ 
 footer{
+	display: grid;
+	font-size: 1.5em;
 	background-color: var(--footer-color);
 	color: var(--light-text);
 	width: 100vw;
+	padding: 5%;
+}
+
+footer li{
+	list-style: none;
 }
 
