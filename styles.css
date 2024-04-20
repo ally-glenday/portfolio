@@ -112,9 +112,32 @@ h1{
 	margin-bottom: 1em;
 }
 
-img[src="svg/arrow-right.svg"]{
+main nav ul li{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+main nav ul li a{
+	justify-self: start;
+}
+
+main nav ul li button{
+	background-image: url(svg/arrow-right.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+}
+
+main nav ul li button{
+	justify-self: end;
 	transform: rotate(45deg);
 }
+
+
+
+
 
 /* CSS classes */ 
 
@@ -148,7 +171,7 @@ main nav a{
 button:hover{
 	cursor: pointer;
 }
-main button{
+main h2 ~ button{
 	font-size: 1em;
 	text-align: center;
 	text-transform: capitalize;
@@ -175,8 +198,6 @@ main button{
 footer{
 	background-color: var(--footer-color);
 	color: var(--light-text);
-	position: absolute;
-	bottom: 0;
 	width: 100vw;
 }
 
