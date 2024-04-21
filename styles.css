@@ -98,7 +98,12 @@ header div{
 header div p{
 	text-transform: uppercase;
 	font-size: .7em;
+}
 
+#hamburger-nav ul li{
+	font-size: .8em;
+	margin: 1%;
+	padding: 5%;
 }
 
 hr{
