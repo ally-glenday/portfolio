@@ -114,39 +114,44 @@ h1{
 }
 
 main h1 ~ p{
-	font-size: 1.8em;
+	font-size: 1.6em;
 	color: #78786E;
 	margin-bottom: 5em;
 	
 }
 /* Learn more */ 
-main p ~ a{
+main div{
 	display: flex;
+	align-items: baseline;
 	margin-bottom: 5em;
 }
 
 main nav ul li{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	
+	/* display: grid; */
 }
 
-main nav ul li a{
+/* main nav ul li{
 	justify-self: start;
+} */
+main nav ul li button{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 2em;
+	align-items: center;
 }
 
-main nav ul li button{
+main nav ul li button img{
+	align-self: flex-end;
 	background-image: url(svg/arrow-right.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 25px;
 	height: 25px;
-}
-
-main nav ul li button{
-	justify-self: end;
 	transform: rotate(45deg);
 }
+
+
 
 
 
@@ -167,9 +172,9 @@ button:hover{
 	cursor: pointer;
 }
 
-main nav a{
+/* main nav a{
 	font-size: 2em;
-}
+} */
 
 /* Japanese langauage link */ 
 .japanese{
