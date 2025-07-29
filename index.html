@@ -9,9 +9,11 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="#">En</a>
-            <button onclick="toggleNavBar()" id="nav-button"></button>
-            <nav class="display-none">
+            <div class="top-navbar">
+                <a href="#">En</a>
+                <button id="hamburger-button" onclick="toggleNavBar()"></button>
+            </div>
+            <nav id="nav-button" class="display-none">
                 <ul>
                     <li>About</li>
                     <li>Projects</li>

@@ -83,10 +83,14 @@ button{
 	border-top: 1.5px solid black;
 	border-bottom: 1.5px solid black;
 }
-header{
+.top-navbar{
 	display: flex;
 	justify-content: space-between;
 }
+#hamburger-button{
+	
+}
+
 nav ul li a{
 
 }
