@@ -55,24 +55,28 @@ table {
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
-
-
 nav ul{
-	display: flex;
+	display: none;
 }
-
-/* ------------------- MEDIA QUERIES ------------------- */ 
+/* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
-	/* CSS rules to apply when screen width is 600px or less */
-	body {
-	  background-color: lightblue;
+	/* When screen width is 600px or more / 600px以上の場合 */
+	nav ul{
+		display: flex;
 	}
   }
 
 
 @media only screen and (min-width: 800px) {
-	/* CSS rules to apply when screen width is 600px or less */
+	/* When screen width is 800px or more / 800px以上の場合 */
 	body {
 	  background-color: lightcoral;
+	}
+  }
+
+@media only screen and (min-width: 1080px) {
+	/* When screen width is 1080px or more / 1080px以上の場合 */
+	body {
+	  background-color: rgb(157, 47, 161);
 	}
   }
