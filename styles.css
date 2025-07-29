@@ -46,3 +46,33 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*{
+	box-sizing: border-box;
+}
+
+/* ------------------- END OF RESET ------------------- */ 
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+nav ul{
+	display: flex;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */ 
+@media only screen and (min-width: 600px) {
+	/* CSS rules to apply when screen width is 600px or less */
+	body {
+	  background-color: lightblue;
+	}
+  }
+
+
+@media only screen and (min-width: 800px) {
+	/* CSS rules to apply when screen width is 600px or less */
+	body {
+	  background-color: lightcoral;
+	}
+  }
