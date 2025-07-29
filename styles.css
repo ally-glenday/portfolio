@@ -66,6 +66,10 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+#wrapper{
+	margin: 10%;
+}
+
 button{
 	display: block;
 	width: 30px;
@@ -76,7 +80,6 @@ button{
 nav ul{
 	display: flex;
 	justify-content: space-between;
-	margin: 20px;
 }
 /* Hides nav bar items on mobile */
 nav ul li:nth-child(n+3):nth-child(-n+5) {
