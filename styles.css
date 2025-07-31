@@ -76,17 +76,18 @@ body {
 #wrapper{
 	margin: 7.5%;
 }
-button{
+/* button{
 	display: block;
 	width: 30px;
 	height: 10px;
 	border-top: 1.5px solid black;
 	border-bottom: 1.5px solid black;
-}
-.top-navbar{
+} */
+/* .top-navbar{
 	display: flex;
 	justify-content: space-between;
-}
+} */
+
 #hamburger-button{
 	
 }
@@ -102,22 +103,28 @@ h1{
 /* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
 	/* When screen width is 600px or more / 600px以上の場合 */
-	nav ul{
+	/* nav ul{
 		display: flex;
-	}
+	} */
   }
 
 
 @media only screen and (min-width: 800px) {
 	/* When screen width is 800px or more / 800px以上の場合 */
 	body {
-	  background-color: lightcoral;
 	}
+	#hamburger-button{
+		display: none;
+	}
+	#nav-button{
+		display: flex;
+	}
+
   }
 
 @media only screen and (min-width: 1080px) {
 	/* When screen width is 1080px or more / 1080px以上の場合 */
 	body {
-	  background-color: rgb(157, 47, 161);
+	  
 	}
   }
