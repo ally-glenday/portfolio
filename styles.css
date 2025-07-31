@@ -61,14 +61,15 @@ button, input[type="submit"], input[type="reset"] {
 a {
 	text-decoration: none;
 }
+
 /* ------------------- END OF RESET ------------------- */ 
 /* CSS for JS toggles */ 
-.display-none{
+/* .display-none{
 	display: none;
 }
 .display-block{
 	display: block;
-}
+} */
 /* Main styles */ 
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -88,43 +89,78 @@ body {
 	justify-content: space-between;
 } */
 
-#hamburger-button{
-	
-}
-
-nav ul li a{
-
-}
-
-
 h1{
 	margin-top: 100%;
 }
+a:link, a:visited, a:active{
+	color: black;
+}
+a:hover{
+	color: lightgray;
+}
+
+/* Tutorial nav bar */
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+	gap: 3em;
+}
+.nav-link{
+	transition: 0.5s ease;
+}
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	background-color: black;
+	/* -webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; */
+}
+.hamburger{
+	display: block;
+	cursor: pointer;
+}
+/* .hamburger.active .bar:nth-child(2){
+	opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+	transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+	transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+	position: fixed;
+} */
+
 /* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
 	/* When screen width is 600px or more / 600px以上の場合 */
 	/* nav ul{
 		display: flex;
 	} */
+
+	.hamburger{
+		display: none;
+	}
+	
+
   }
 
 
 @media only screen and (min-width: 800px) {
 	/* When screen width is 800px or more / 800px以上の場合 */
-	body {
-	}
-	#hamburger-button{
-		display: none;
-	}
-	#nav-button{
-		display: flex;
-	}
+
 
   }
 
 @media only screen and (min-width: 1080px) {
 	/* When screen width is 1080px or more / 1080px以上の場合 */
-	body {
-	  
-	}
+	
   }
