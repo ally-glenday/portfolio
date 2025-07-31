@@ -1,4 +1,7 @@
-// function toggleNavBar(){
-//     var navButton = document.getElementById("nav-button");
-//     navButton.classList.toggle("display-block");
-// }
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})

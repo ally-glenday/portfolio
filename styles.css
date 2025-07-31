@@ -128,17 +128,29 @@ a:hover{
 }
 /* .hamburger.active .bar:nth-child(2){
 	opacity: 0;
-}
+} */
 .hamburger.active .bar:nth-child(1){
-	transform: translateY(8px) rotate(45deg);
+	transform: translateY(4px) rotate(45deg);
 }
-.hamburger.active .bar:nth-child(3){
-	transform: translateY(-8px) rotate(-45deg);
+.hamburger.active .bar:nth-child(2){
+	transform: translateY(-4px) rotate(-45deg);
 }
 .nav-menu{
 	position: fixed;
-} */
+	left: -100%;
+	top: 70px;
+	gap: 0;
+	flex-direction: column;
+	width: 100%;
+	transition: 0.3s;
+}
 
+.nav-item{
+	margin: 16px 0;
+}
+.nav-menu.active{
+	left: 0	;
+}
 /* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
 	/* When screen width is 600px or more / 600px以上の場合 */
