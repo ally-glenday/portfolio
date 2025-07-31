@@ -139,7 +139,6 @@ a:hover{
 	position: fixed;
 	left: -100%;	
 	top: 70px;
-	/* gap: 0; */
 	flex-direction: column;
 	width: 100%;
 	transition: .5s;
@@ -147,7 +146,7 @@ a:hover{
 }
 
 .nav-item{
-	margin: 16px 0;
+	/* margin: 16px 0; */
 }
 .nav-menu.active{
 	left: 0;
@@ -162,6 +161,16 @@ a:hover{
 	.hamburger{
 		display: none;
 	}
+	.nav-menu{
+		position: initial;
+		left: initial;	
+		top: initial;
+		flex-direction: initial;
+		width: initial;
+		margin: initial;
+	}
+	
+
 	
 
   }
