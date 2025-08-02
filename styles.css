@@ -75,7 +75,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 #wrapper{
-	margin: 7.5%;
+	/* margin: 7.5%; */
 }
 /* button{
 	display: block;
@@ -152,8 +152,10 @@ a:hover{
 	left: 0;
 }
 .temp-background{
-	/* width: 120%;
-	height: 120%; */
+	width: 100vw;
+	height: 80vh;
+	background-color: antiquewhite;
+	margin: 0 auto;
 }
 /* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
