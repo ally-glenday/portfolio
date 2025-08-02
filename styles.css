@@ -151,6 +151,10 @@ a:hover{
 .nav-menu.active{
 	left: 0;
 }
+.temp-background{
+	/* width: 120%;
+	height: 120%; */
+}
 /* ------------------- MEDIA QUERIES (mobile first)------------------- */ 
 @media only screen and (min-width: 600px) {
 	/* When screen width is 600px or more / 600px以上の場合 */
