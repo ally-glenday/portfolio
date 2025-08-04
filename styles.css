@@ -158,26 +158,51 @@ a:hover{
 }
 .temp-background{
 	width: 100vw;
-	height: 100vh;
+	height: 95vh;
 	margin: 0 auto;
 	background: url(assets/background-img-temp.jpeg) no-repeat fixed;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
-.hero-image-text{
+/* Hero image h1, div + p tag */ 
+.temp-background h1{
+	position: relative;
+	top: 50vh;
+	font-size: 22px;
+	line-height: 25px;
+	margin: 5%;
+}
+.hero-text-flex-container{
+	display: flex;
+	justify-content: space-between;
+}
+/* Hero image p tag */ 
+.hero-text-flex-container p{
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: 15% 5%;
+}
+
+/* .hero-image-text{
 	margin: 30px;
 	color: rgb(243, 243, 243);
 	font-size: 20px;
-	/* padding-top: 250px; */
-}
-.hero-image-text h1{
+} */
+/* .hero-image-text h1{
 	line-height: 25px;
 }
 .hero-image-text p{
 	font-size: 10px;
 	text-transform: uppercase;
-}
+} */
 .flex-container{
 	display: flex;
 	justify-content: space-between;
+	margin-top: auto;
+	margin-bottom: 20%;
+
 }
 section h2{
 	text-transform: uppercase;
