@@ -6,13 +6,21 @@
 var blobs = []
 
 function setup() {
-  createCanvas(600, 600);
+/* Stackoverflow code */ 
+    const myCanvas = createCanvas(400, 400);
+    myCanvas.parent("p5-sketch");
+
+    myCanvas.style('z-index', '-1');
+    myCanvas.position(0,0); 
+/* Stackoverflow code */ 
+
+//   createCanvas(600, 600);
   colorMode(HSB);
   for (i = 0; i < 15; i++) blobs.push(new Blob(random(0, width), random(0, height)));
 }
 
 function draw() {
-  background(50);
+  background(0);
 
   loadPixels();
   for (x = 0; x < width; x++) {
