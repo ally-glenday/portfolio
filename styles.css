@@ -74,9 +74,7 @@ a {
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
-#wrapper{
-	margin: 7.5%;
-}
+
 .temp-background{
 
 }
@@ -225,9 +223,36 @@ a:hover{
 	margin-bottom: 20%;
 
 }
+/* Wrapper for main content for margin and spacing */
+.main-wrapper{
+	margin: 7.5%;
+}
 section h2{
 	text-transform: uppercase;
 	font-size: 2em;
+	padding: 20% 0;
+}
+section p:first-of-type{
+	line-height: 1.75em;
+	margin-bottom: 20%;
+}
+
+section br{
+	margin-bottom: 10%;
+}
+
+section h3{
+	font-size: 1.5em;
+	margin-bottom: 10%;
+}
+/* Table styles */ 
+th{
+	padding-bottom: 10%;
+}
+td{
+	font-size: .8em;
+	border-top: 1px solid;
+	padding: 5% 0;
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
