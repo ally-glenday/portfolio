@@ -8,7 +8,7 @@ var blobs = []
 function setup() {
 /* Stackoverflow code */ 
     // const myCanvas = createCanvas(500, 500);
-    myCanvas.parent("p5-sketch");
+    // myCanvas.parent("p5-sketch");
 
     // myCanvas.style('z-index', '-1');
 /* Stackoverflow code */ 
