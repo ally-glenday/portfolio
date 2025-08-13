@@ -134,9 +134,7 @@ a:hover{
 	display: block;
 	cursor: pointer;
 }
-/* .hamburger.active .bar:nth-child(2){
-	opacity: 0;
-} */
+
 .hamburger.active .bar:nth-child(1){
 	transform: translateY(4px) rotate(45deg);
 }
@@ -148,13 +146,12 @@ a:hover{
 	left: -100%;	
 	top: 70px;
 	flex-direction: column;
-	width: 100%;
+	width: 100vw;
+	/* height: 100vh; */
 	transition: .5s;
 	padding: 7.5%;
 	background-color: white;
 }
-
-/* styles.css | file:///Users/allyglenday/Documents/Portfolio/portfolio/styles.css */
 
 .nav-bar.active{
 	margin: 0;
@@ -172,12 +169,18 @@ a:hover{
 	width: 100vw;
 	height: 95vh;
 	margin: 0 auto;
-	/* background: -webkit-canvas(squares);  */
-	/* background: url(assets/background-img-temp.jpeg) no-repeat fixed; */
 	color: white;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	/* Add background as a backup for p5.js sketch */ 
+	background-image: url(assets/background-img-temp.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.p5-sketch{
+	min-width: 100vw;
+	min-height: 100vh;
 }
 /* Hero image h1, div + p tag */ 
 .temp-background h1{

@@ -7,11 +7,10 @@ var blobs = []
 
 function setup() {
 /* Stackoverflow code */ 
-    const myCanvas = createCanvas(400, 400);
+    // const myCanvas = createCanvas(500, 500);
     myCanvas.parent("p5-sketch");
 
-    myCanvas.style('z-index', '-1');
-    myCanvas.position(0,0); 
+    // myCanvas.style('z-index', '-1');
 /* Stackoverflow code */ 
 
 //   createCanvas(600, 600);
