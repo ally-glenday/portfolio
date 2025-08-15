@@ -271,12 +271,32 @@ td{
 	line-height: 1.3em;
 	padding: 10%;
 }
-.offset-word{
-	display: block;
-	text-indent: 10%;
+.p5-sketch-2 h4{
+	margin-bottom: 5%;
 }
-.stand-out-text{
-
+.p5-sketch-2 p{
+	font-size: .6em;
+	line-height: 2em;
+	margin-bottom: 30%;	
+}
+#stand-out-text{
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 30% 0 50% 0;
+}
+footer{
+	background-color: black;
+	padding: 20% 5% 20% 5%;
+	font-weight: lighter;
+}
+footer h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+footer p, footer a:visited, footer a:active, footer a:link{
+	color: white;
+	margin: 5% 0;
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
@@ -306,7 +326,10 @@ td{
 		width: initial;
 		margin: initial;
 	}
-	
+	.offset-word{
+		display: block;
+		text-indent: 10%;
+	}
 
 	
 
