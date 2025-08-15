@@ -326,11 +326,43 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		width: initial;
 		margin: initial;
 	}
+	.temp-background > h1:nth-child(1) > span:nth-child(1) {
+		font-size: 1.5em;
+		line-height: 1.3em;
+		}
+	section h2 {
+		font-size: 2.5em;
+		padding: 10% 0;
+	}
+	
+	section br{
+		margin-bottom: 5%;
+  }
+  
+	.nav-bar{
+		padding: 0 5%;
+	}
+	
+	.nav-menu{
+		padding: 2.5%;
+	}
+
+	table{
+		width: 100%;
+		text-align: left;
+   }
+    th{
+		padding-bottom: 2.5%;
+    }
+	#stand-out-text{
+		margin: 20% 0 30% 0;
+	}
 	.offset-word{
 		display: block;
 		text-indent: 10%;
 	}
 
+  
 	
 
   }
