@@ -354,6 +354,9 @@ footer p, footer a:visited, footer a:active, footer a:link{
     th{
 		padding-bottom: 2.5%;
     }
+	td{
+		padding: 2.5% 0;
+	}
 	#stand-out-text{
 		margin: 20% 0 30% 0;
 	}
@@ -361,7 +364,9 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		display: block;
 		text-indent: 10%;
 	}
-
+	.p5-sketch-2 p {
+		margin-bottom: 20%;	
+	}
   
 	
 
@@ -370,11 +375,39 @@ footer p, footer a:visited, footer a:active, footer a:link{
 
 @media only screen and (min-width: 800px) {
 	/* When screen width is 800px or more / 800px以上の場合 */
-
-
   }
 
 @media only screen and (min-width: 1080px) {
 	/* When screen width is 1080px or more / 1080px以上の場合 */
+	
+	section h2{
+		font-size: 3em;
+		padding: 0;
+	}
+	.about-flex-container{
+		display: flex;
+	}
+	.about-flex-item{
+		flex: 1 1;
+	}
+	.about-flex-item + p{
+		font-size: 1.1em;
+	}
+	.p5-sketch-2{
+		padding: 0%;
+	}
+	.skills-flex-container{
+		display: flex;
+		justify-content: space-evenly;
+		gap: 5%;
+	}
+	.skills-flex-item{
+		flex: 1;
+		/* max-height: 30%; */
+		/* padding: 0 % 0 5%; */
+		
+	}
+
+
 	
   }
