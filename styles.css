@@ -308,7 +308,7 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		margin: 5%; */
 	}
 }
-
+/* ------------------- When screen width is 600px or more / 600px以上の場合------------------- */ 
 @media only screen and (min-width: 600px) {
 	/* When screen width is 600px or more / 600px以上の場合 */
 	/* nav ul{
@@ -367,19 +367,6 @@ footer p, footer a:visited, footer a:active, footer a:link{
 	.p5-sketch-2 p {
 		margin-bottom: 20%;	
 	}
-  
-	
-
-  }
-
-
-@media only screen and (min-width: 800px) {
-	/* When screen width is 800px or more / 800px以上の場合 */
-  }
-
-@media only screen and (min-width: 1080px) {
-	/* When screen width is 1080px or more / 1080px以上の場合 */
-	
 	section h2{
 		font-size: 3em;
 		padding: 0;
@@ -391,7 +378,7 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		flex: 1 1;
 	}
 	.about-flex-item + p{
-		font-size: 1.1em;
+		/* font-size: .1em; */
 	}
 	.p5-sketch-2{
 		padding: 0%;
@@ -400,13 +387,27 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		display: flex;
 		justify-content: space-evenly;
 		gap: 5%;
+		font-size: .7em;
 	}
 	.skills-flex-item{
 		flex: 1;
-		/* max-height: 30%; */
-		/* padding: 0 % 0 5%; */
-		
+		/* Temp setting */
+		max-width: 25vw;	
 	}
+		
+
+  }
+
+
+@media only screen and (min-width: 800px) {
+	/* When screen width is 800px or more / 800px以上の場合 */
+	
+  }
+
+@media only screen and (min-width: 1080px) {
+	/* When screen width is 1080px or more / 1080px以上の場合 */
+	
+	
 
 
 	
