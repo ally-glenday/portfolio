@@ -74,7 +74,14 @@ a {
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
-
+.japanese-page{
+	display: flex;
+	align-self: flex-end;
+	border: .5px solid white;
+	border-radius: 50%;
+	padding: 5%;
+	margin: 5%;
+}
 .temp-background{
 
 }
@@ -169,7 +176,7 @@ a:hover{
 .temp-background{
 	display: block;
 	width: 100vw;
-	height: 95vh;
+	height: 100vh;
 	margin: 0 auto;
 	color: white;
 	display: flex;
@@ -187,7 +194,7 @@ a:hover{
 /* Hero image h1, div + p tag */ 
 .temp-background h1{
 	position: relative;
-	top: 40vh;
+	top: 20vh;
 	font-size: 1.6em;
 	font-weight: lighter;
 	line-height: 1.3em;
