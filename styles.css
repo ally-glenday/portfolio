@@ -77,7 +77,7 @@ body {
 .japanese-page{
 	display: flex;
 	align-self: flex-end;
-	border: .5px solid white;
+	border: 1px solid white;
 	border-radius: 50%;
 	padding: 5%;
 	margin: 5%;
@@ -254,7 +254,9 @@ section h3{
 }
 /* Table styles */ 
 th{
+	font-size: 1px;
 	padding-bottom: 10%;
+	display: none;
 }
 td{
 	font-size: .8em;
