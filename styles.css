@@ -71,6 +71,7 @@ a {
 	display: block;
 } */
 /* Main styles */ 
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -228,7 +229,6 @@ a:hover{
 	justify-content: space-between;
 	margin-top: auto;
 	margin-bottom: 20%;
-
 }
 /* Wrapper for main content for margin and spacing */
 .main-wrapper{
@@ -253,16 +253,24 @@ section h3{
 	margin-bottom: 10%;
 }
 /* Table styles */ 
-th{
-	font-size: 1px;
-	padding-bottom: 10%;
-	display: none;
+
+table{
+	width: 100%;
+	text-align: left;
+	font-size: .6em;
 }
+
+th{
+	padding-bottom: 10%;
+}
+
 td{
-	font-size: .8em;
+	font-size: 1em;
 	border-top: 1px solid;
 	padding: 5% 0;
+
 }
+
 .p5-sketch-2{
 	background-image: url(assets/second-background.jpeg);
 	background-size: cover;
@@ -306,6 +314,9 @@ footer h2{
 footer p, footer a:visited, footer a:active, footer a:link{
 	color: white;
 	margin: 5% 0;
+}
+.flex-container{
+	display: flex;
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
@@ -356,10 +367,6 @@ footer p, footer a:visited, footer a:active, footer a:link{
 		padding: 2.5%;
 	}
 
-	table{
-		width: 100%;
-		text-align: left;
-   }
     th{
 		padding-bottom: 2.5%;
     }
