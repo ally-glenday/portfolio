@@ -318,6 +318,17 @@ footer p, footer a:visited, footer a:active, footer a:link{
 .flex-container{
 	display: flex;
 }
+.footer-flex-container{
+	display: flex;
+	font-size: .6em;
+}
+.footer-flex-container a{
+	display: block;
+}
+.copyright{
+	display: flex;
+	justify-content: center;
+}
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
 	.temp-background h1{
