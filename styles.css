@@ -249,8 +249,9 @@ section p:first-of-type{
 	margin-bottom: 20%;
 }
 
-section br{
-	margin-bottom: 10%;
+.paragraph-break{
+	display: block;
+	margin-bottom: 7.5%;
 }
 
 section h3{
@@ -304,7 +305,7 @@ td{
 #stand-out-text{
 	font-size: 1em;
 	line-height: 1.5em;
-	margin: 30% 0 50% 0;
+	margin: 15vh 0 20vh 0;
 }
 footer{
 	background-color: black;
@@ -328,9 +329,6 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	font-size: .8em;
-	/* justify-content: space-between;
-	column-gap: 15%; */
-	/* min-width: 100vw; */
 }
 .footer-grid-container p + .footer-grid-container a{
 	margin: 5% 0;
@@ -340,7 +338,15 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 }
 .footer-grid-item:not(:first-child){
 	display: grid;
-	gap: 50%;
+	gap: 25%;
+	/* margin-top: 50%; */
+}
+.footer-grid-item:first-child{
+	display: grid;
+	gap: 1%;
+}
+.footer-grid-item p{
+	/* color: rgb(188, 188, 188); */
 }
 
 .copyright{
@@ -412,7 +418,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		padding: 2.5% 0;
 	}
 	#stand-out-text{
-		margin: 20% 0 30% 0;
+		padding: 10% 5% 0 5%;
 	}
 	.offset-word{
 		display: block;
@@ -448,6 +454,13 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		/* Temp setting */
 		max-width: 25vw;	
 	}
+
+	footer h2{
+		padding-bottom: 7.5%;
+	}
+	.copyright{
+		margin-top: 10%;
+	}
 		
 
   }
@@ -455,12 +468,12 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 
 @media only screen and (min-width: 800px) {
 	/* When screen width is 800px or more / 800px以上の場合 */
-	.japanese-page{
+	/* .japanese-page{
 		padding: 1.5%;
-	}
+	} */
 	.temp-background h1{
-		font-size: 2.8em;
-		line-height: 1.2em;
+		font-size: 2em;
+		line-height: 1.4em;
 		margin: 5% 10%;
 	}
 	.hero-text-flex-container p{
@@ -472,8 +485,43 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 @media only screen and (min-width: 1080px) {
 	/* When screen width is 1080px or more / 1080px以上の場合 */
 	
+	.japanese-page{
+		padding: 1.5vw;
+		margin: 2.5% 5%;
+	}
+
+	.temp-background h1{
+		font-size: 2.5em;
+		line-height: 1.4em;
+		margin: 10%;
+		top: 20vh;
+	}
 	
+	p.about-flex-item{
+		font-size: 1.2em;
+	}
+	#about > h3:nth-child(2){
+		font-size: 1.7em;
+	}
+	table{
+		font-size: 1.2em;
+	}
+	#stand-out-text{
+		font-size: 1.4em;
+		margin: 10% 5%;
+	}
+	.skills-flex-container{
+		font-size: 1em;
+	}
+	footer{
+		font-size: 1.2em;
+	}
 
-
+	footer h2{
+		padding-bottom: 5%;
+	}
+	.copyright{
+		
+	}
 	
   }
