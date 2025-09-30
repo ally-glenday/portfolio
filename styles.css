@@ -326,6 +326,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 }
 .footer-grid-container{
 	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
 	font-size: .8em;
 	/* justify-content: space-between;
 	column-gap: 15%; */
@@ -337,11 +338,16 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 .footer-grid-container a{
 	display: block;
 }
+.footer-grid-item:not(:first-child){
+	display: grid;
+	gap: 50%;
+}
 
 .copyright{
 	display: flex;
 	justify-content: center;
-	font-size: .8em;
+	font-size: .6em;
+	margin-top: 20%;
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
