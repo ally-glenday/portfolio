@@ -257,7 +257,7 @@ section h3{
 table{
 	width: 100%;
 	text-align: left;
-	font-size: .6em;
+	font-size: .7em;
 }
 
 th{
@@ -311,7 +311,7 @@ footer h2{
 	text-transform: uppercase;
 	font-size: 2em;
 }
-footer p, footer a:visited, footer a:active, footer a:link{
+footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	color: white;
 	margin: 5% 0;
 }
@@ -320,11 +320,16 @@ footer p, footer a:visited, footer a:active, footer a:link{
 }
 .footer-flex-container{
 	display: flex;
-	font-size: .6em;
+	font-size: .8em;
+	gap: 20% 10%;
+}
+.footer-flex-container p + .footer-flex-container a{
+	margin: 5% 0;
 }
 .footer-flex-container a{
 	display: block;
 }
+
 .copyright{
 	display: flex;
 	justify-content: center;
@@ -345,6 +350,13 @@ footer p, footer a:visited, footer a:active, footer a:link{
 	/* nav ul{
 		display: flex;
 	} */
+	.japanese-page{
+		padding: 2.5%;
+	}
+
+	.temp-background h1{
+		top: 10vh;
+	}
 
 	.hamburger{
 		display: none;
@@ -428,7 +440,18 @@ footer p, footer a:visited, footer a:active, footer a:link{
 
 @media only screen and (min-width: 800px) {
 	/* When screen width is 800px or more / 800px以上の場合 */
-	
+	.japanese-page{
+		padding: 1.5%;
+	}
+	.temp-background h1{
+		font-size: 2.8em;
+		line-height: 1.2em;
+		margin: 5% 10%;
+	}
+	.hero-text-flex-container p{
+		font-size: 1em;
+		margin: 5% 10%;
+	}
   }
 
 @media only screen and (min-width: 1080px) {
