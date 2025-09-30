@@ -324,17 +324,17 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 .flex-container{
 	display: flex;
 }
-.footer-flex-container{
-	display: flex;
+.footer-grid-container{
+	display: grid;
 	font-size: .8em;
-	justify-content: space-between;
-	/* column-gap: 15%;
-	min-width: 100vw; */
+	/* justify-content: space-between;
+	column-gap: 15%; */
+	/* min-width: 100vw; */
 }
-.footer-flex-container p + .footer-flex-container a{
+.footer-grid-container p + .footer-grid-container a{
 	margin: 5% 0;
 }
-.footer-flex-container a{
+.footer-grid-container a{
 	display: block;
 }
 
