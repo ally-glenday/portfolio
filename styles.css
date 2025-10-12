@@ -72,8 +72,17 @@ a {
 } */
 /* Main styles */ 
 
+a:link, a:visited, a:active{
+	color: black;
+}
+a:hover{
+	color: lightgray;
+}
 body {
 	font-family: Helvetica, Arial, sans-serif;
+}
+a.japanese-page{
+	color: white;
 }
 .japanese-page{
 	display: flex;
@@ -105,12 +114,6 @@ body {
 
 h1{
 	/* margin-top: 100%; */
-}
-a:link, a:visited, a:active{
-	color: black;
-}
-a:hover{
-	color: lightgray;
 }
 
 /* Tutorial nav bar */
