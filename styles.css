@@ -313,6 +313,45 @@ td{
 
 /*----------------------- Temp projects section -------------------------*/
 
+#projects{
+	margin: 5%;
+}
+
+.projects-flexbox-container{
+	/* margin: 5%; */
+}
+.projects-flexbox-container h4{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: lighter;
+	margin: 5%;
+}
+.project-image-link{
+	display: flex;
+	align-self: center;
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	
+}
+
+/* .projects-flexbox-container{
+	display: flex;
+}
+
+.project-one{
+	width: 50vw;
+	height: 50vh;
+	background-image: url(assets/email-validator.jpg);
+	background-size: cover;
+}
+.project-one-text{
+	display: inline;
+	width: 50vw;
+	height: 50vh;
+	float: right;
+	background-color: aliceblue;
+} */
 
 footer{
 	background-color: black;
