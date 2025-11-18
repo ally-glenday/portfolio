@@ -71,6 +71,28 @@ a {
 	display: block;
 } */
 /* Main styles */ 
+/* 下　CHAT GPT */ 
+.canvas-container {
+	position: relative;
+	width: 100%;
+	height: 100vh; /* full height of first hero section */
+	overflow: hidden;
+  }
+  #gradient-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* behind the content */
+  }
+  .canvas-content {
+	position: relative;
+	z-index: 2; /* content on top of canvas */
+	padding: 2rem;
+	color: white; /* or whatever fits the canvas */
+  }
+/* 上 CHAT GPT */ 
 
 #gradient-canvas{
 	/* Added code */
@@ -81,10 +103,19 @@ a {
 	/* Added code */
 	width: 100%;
 	height: 100%;
-	--gradient-color-1: #c3e4ff; 
+	--gradient-color-1: #0d2e00; 
 	--gradient-color-2: #6ec3f4; 
 	--gradient-color-3: #eae2ff;  
 	--gradient-color-4: #b9beff;
+
+
+	/* green yellow & red version colours #4CD4B0
+
+#FFFCE6
+
+#F24D16
+
+#EDD834 */ 
   }
 
 .temp-background{
