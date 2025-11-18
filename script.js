@@ -1,3 +1,13 @@
+import { Gradient } from './Gradient.js'
+ 
+// Create your instance
+const gradient = new Gradient()
+ 
+// Call `initGradient` with the selector to your canvas
+gradient.initGradient('#gradient-canvas')
+
+
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".nav-bar");
@@ -15,3 +25,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }));
+
+
+
