@@ -72,20 +72,24 @@ a {
 } */
 /* Main styles */ 
 
-#gradient-canvas {
+#gradient-canvas{
+	/* Added code */
 	z-index: -1;
-	width:100%;
-	height:100%;
+	position: fixed; /* ensures it stays behind content */
+ 	top: 0;
+  	left: 0;
+	/* Added code */
+	width: 100%;
+	height: 100%;
 	--gradient-color-1: #c3e4ff; 
 	--gradient-color-2: #6ec3f4; 
 	--gradient-color-3: #eae2ff;  
 	--gradient-color-4: #b9beff;
   }
 
-.test-h1{
-	position: relative;
-	bottom: 100px;
-	color: red;
+.temp-background{
+	/* position: relative;
+	bottom: 50vw; */
 }
 
 /* ------------------------------ */ 
@@ -201,7 +205,7 @@ h1{
 	min-height: 100vh;
 }
 .temp-background{
-	display: block;
+	
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
@@ -210,9 +214,9 @@ h1{
 	justify-content: space-between;
 	flex-direction: column;
 	/* Add background as a backup for p5.js sketch */ 
-	background-image: url(assets/background-img-temp.jpeg);
+	/* background-image: url(assets/background-img-temp.jpeg);
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 .p5-sketch{
 	min-width: 100vw;
