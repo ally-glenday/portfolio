@@ -285,6 +285,14 @@ h1{
 	font-size: 10px;
 	text-transform: uppercase;
 } */
+#about{
+	background-color: white;
+	padding: 5%;
+}
+#about h2, #about p{
+	/* margin: 5%; */
+}
+
 .flex-container{
 	display: flex;
 	justify-content: space-between;
@@ -292,9 +300,9 @@ h1{
 	margin-bottom: 20%;
 }
 /* Wrapper for main content for margin and spacing */
-.main-wrapper{
+/* .main-wrapper{
 	margin: 7.5%;
-}
+} */
 section h2{
 	text-transform: uppercase;
 	font-size: 2em;
