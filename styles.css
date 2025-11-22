@@ -341,15 +341,14 @@ td{
 
 }
 
-.p5-sketch-2{
+/* .p5-sketch-2{
 	background-image: url(assets/second-background.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
-	/* margin: 0;
-	padding: 0; */
-}
+
+} */
 .p5-sketch-2{
 	/*Text colour (h3)*/ 
 	color: white;
