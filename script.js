@@ -7,7 +7,6 @@ const gradient = new Gradient()
 gradient.initGradient('#gradient-canvas')
 
 
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".nav-bar");
