@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-<html lang="ja-JP">
+<html lang="ja-jp"></html>
 <head>
-    <!-- Add p5.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
      <!-- Add p5.js -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Ally Glenday</title>
 </head>
 <body id="top">
-        <!-- <header class="header-container">
-                <nav class="nav-bar">
-                    <a href="#">JP</a>
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </nav>
-        </header>  -->
-        <div class="temp-background">
-            <a href="index.html" class="japanese-page">EN</a>
-            <!-- <div class="hero-image-text"> -->
-                <h1><span class="offset-word">ロンドン出身で大阪在住のバイリンガルデベロッパー。デザイン、開発、そしてクリエイティブコーディングを愛しています。</span></h1>
-                <div class="hero-text-flex-container">
-                    <p>アリー　グレンデイ</p>
-                    <p>クリエティブ　デベロッパー</p>
+      
+     
+        <!-- gradient.js test -->
+        <div class="canvas-container">
+            <canvas id="gradient-canvas" data-transition-in></canvas>
+            <div class="canvas-content">
+                <div class="temp-background">
+                    
+           
+                    <a href="japanese.html" class="japanese-page">JP</a>
+                    <!-- <div class="hero-image-text"> -->
+                        <h1><span class="offset-word">A bilingual developer from London, based in Osaka seeking a developer role. I love design, development, and creative coding.</span></h1>
+                        <div class="hero-text-flex-container">
+                            <p>Ally Glenday</p>
+                            <p>Creative Developer</p>
+                        </div>
+                    <!-- </div> -->
                 </div>
-            <!-- </div> -->
+            </div>
+        </div>
+
+        
+
+        <!-- gradient.js test -->
+         
+        <!-- <div class="temp-background">
+                    
+           
+            <a href="japanese.html" class="japanese-page">JP</a>
+        
+                <h1><span class="offset-word">A bilingual developer from London, based in Osaka seeking a developer role. I love design, development, and creative coding.</span></h1>
+                <div class="hero-text-flex-container">
+                    <p>Ally Glenday</p>
+                    <p>Creative Developer</p>
+                </div>
+ -->
+
+
+        
         </div>
         <main>
             <div class="main-wrapper">
             <section id="about">
                 <div class="about-flex-container">
-                  <h2 class="about-flex-item">私たちについて</h2>
-                  <p class="about-flex-item"> 私はアリーです。フロントエンドデベロッパーとして、美しく直感的なユーザー体験を生み出すことに情熱を持っています。英語と日本語のバイリンガル（JLPT N2）として、翻訳だけでなく、英語圏向けのコンテンツ最適化も対応できます。 <span class="paragraph-break"></span> 現在は大阪の国際的なEC企業で働いており、ECサイトの運営について深い理解を身につけました。BigCommerceでの商品管理をはじめ、お客様対応などさまざまな業務を担当しています。 <span class="paragraph-break"></span> UI/UXデザインやフロントエンド開発の基礎をしっかりと学び、ウェブデザインの修士号を取得しています。 </p>
+                  <h2 class="about-flex-item">About</h2>
+                  <p class="about-flex-item">I&#39;m Ally, a front-end developer who has a passion for creating beautiful, intuitive user experiences. I&#39;m bilingual in English and Japanese (JLPT N2), I can offer translation as well as optimising content for English-speaking markets. <span class="paragraph-break"></span>I currently work at an international e-commerce company in Osaka, where I have gained a solid understanding of e-commerce sites. I deal with customer interactions, where I handle various such as managing products in BigCommerce. <span class="paragraph-break"></span>I gained a solid foundation of UI/ UX design, front end development. I have a Masters Degree in Web Design, I currently work for a international e-commerce company here in Osaka, where I handle various such as managing products in BigCommerce. I gained a solid foundation of UI/ UX design, front end development.</p>
                 </div>
                 <h3>Education</h3>
                 <table>
@@ -81,6 +88,10 @@
                 </table>
             </section>
             </div><!--main-wrapper-->
+            
+            <!-- add new section for procifient in -->
+
+
             <div class="p5-sketch-2">
                 <p id="stand-out-text"><span class="offset-word">Proficient in both design and development, I can create, develop and optimise engaging content.</span></p>
                 <div class="skills-flex-container">
@@ -99,7 +110,26 @@
                 </div> <!--skills-flex-container-->
             </div><!--p5-sketch-2-->
             <section>
-                <!-- <h2 id="projects">Projects</h2> -->
+                <h2 id="projects">Projects</h2>
+                <div class="projects-flexbox-container">
+                    <div class="project-one"></div>
+                    <div class="project-one-text">
+                        <h4>01. Room Homepage</h4>
+                        <a href="https://ally-glenday.github.io/fm-news-hompage-main/"><img class="project-image-link" src="assets/news-homepage-background.jpg" alt="news homepage background" height="1024" width="1440"></a>
+                        <h4>02. Newsletter Sign-up</h4>
+                        <a href="https://ally-glenday.github.io/fm-newsletter-sign-up/"><img class="project-image-link" src="assets/email-validator.jpg" alt=""></a>
+                        <h4>03. Birdful.com</h4>
+                        <a href="https://ally-glenday.github.io/birdful/index.html"><img class="project-image-link" src="assets/birdful-image.png" alt=""></a>
+
+
+
+                        <!-- <p>Project Brief: <br><p>Project Brief: Responsive Email Signup Form
+                            Developed a responsive email signup form with real-time validation and user feedback.
+                            Users can submit their email, receive a personalised success message, and view helpful error messages for empty or invalid inputs. The form adapts smoothly to different screen sizes and includes clear hover and focus states for an accessible, user-friendly experience.    </p>
+                        </p> -->
+                    </div>
+
+                </div>
             </section>
 
         </main>
@@ -118,6 +148,7 @@
                 </div>
                 <div class="footer-grid-item">
                     <a href="www.linkedin.com/in/alasdair-glenday">LinkedIn</a>
+                    
                     <a href="https://github.com/ally-glenday">Github</a>
                     <a href="#top">Back to top</a>
                 </div>
@@ -127,8 +158,9 @@
 
             <p class="copyright">&copy; Ally Glenday 2025</p>
         </footer>
-    <script src="script.js"></script>
+        <script type="module" src="script.js"></script>
+
     <!-- <script src="sketch.js"></script>
     <script src="blob.js"></script> -->
 </body>
-</html><!DOCTYPE html>
+</html>
