@@ -89,7 +89,7 @@ a {
   .canvas-content {
 	position: relative;
 	z-index: 2; /* content on top of canvas */
-	padding: 2rem;
+	/* padding: 2rem; */
 	color: white; /* or whatever fits the canvas */
   }
 /* 上 CHAT GPT */ 
@@ -105,8 +105,8 @@ a {
 	height: 100%;
 	--gradient-color-1: #0d2e00; 
 	--gradient-color-2: #6ec3f4; 
-	--gradient-color-3: #eae2ff;  
-	--gradient-color-4: #b9beff;
+	--gradient-color-3: #b1a4d2;  
+	--gradient-color-4: #d0d1d1;
 
 
 	/* green yellow & red version colours #4CD4B0
@@ -381,11 +381,11 @@ td{
 	/* margin: 5%; */
 }
 .projects-flexbox-container h4{
-	text-transform: uppercase;
+	/* text-transform: uppercase;
 	font-size: 1.5em;
 	font-weight: lighter;
 	margin: 5%;
-	padding: 10% 0;
+	padding: 10% 0; */
 }
 .project-image-link{
 	display: flex;
@@ -395,6 +395,30 @@ td{
 	margin: 0;
 	
 }
+#projects-section{
+	background-color: white;
+}
+
+.project-number{
+
+}
+.project-text{
+	/* margin: 10%;
+	padding: 10% 0; */
+
+	/* text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: lighter; */
+}
+
+.projects-grid-container{
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	margin: 5%;
+	/* grid-template-rows: 1fr 1fr; */
+}
+
+
 
 /* .projects-flexbox-container{
 	display: flex;
