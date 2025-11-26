@@ -374,7 +374,7 @@ td{
 
 #projects{
 	margin: 5%;
-	padding: 30% 0 15% 0;
+	/* padding: 30% 0 15% 0; */
 }
 
 .projects-flexbox-container{
@@ -392,12 +392,12 @@ td{
 	align-self: center;
 	width: 100vw;
 	height: auto;
-	margin: 20% 0 5% 0;
-	padding: 10% 0 10% 0;
+	margin: 10% 0 10% 0;
+	
 }
 .project-image-link:last-of-type{
 	padding: 0;
-	margin-bottom: 50%;
+	/* margin-bottom: 50%; */
 }
 #projects-section{
 	background-color: white;
