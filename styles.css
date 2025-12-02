@@ -145,7 +145,7 @@ a.japanese-page{
 	padding: 5%;
 	margin: 5%;
 }
-.japanese-page:hover{
+.japanese-page:hover, form button:hover{
 	background-color: rgba(255, 255, 255, 0.164);
 	transition: .5s;
 	cursor: pointer;
@@ -406,13 +406,8 @@ td{
 .project-number{
 
 }
-.project-text{
-	/* margin: 10%;
-	padding: 10% 0; */
-
-	/* text-transform: uppercase;
-	font-size: 1.5em;
-	font-weight: lighter; */
+.project-text h4{
+	margin-bottom: 2%;
 }
 
 .projects-grid-container{
@@ -589,6 +584,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		font-size: 2.5em;
 		padding: 10% 0;
 	}
+	section h3{
+		margin: 10% 0 5% 0;
+	}
 	
 	section br{
 		margin-bottom: 5%;
@@ -609,7 +607,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		padding: 2.5% 0;
 	}
 	#stand-out-text{
+		font-size: 1.5em;
 		padding: 10% 5% 0 5%;
+		margin: 12.5% 0 12.5% 0;
 	}
 	.offset-word{
 		display: block;
@@ -620,7 +620,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 	section h2{
 		font-size: 3em;
-		padding: 0;
+		padding: 10% 0;
 	}
 	.about-flex-container{
 		display: flex;
@@ -645,6 +645,31 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		/* Temp setting */
 		max-width: 25vw;	
 	}
+
+	.projects-grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.project-number{
+		font-size: 1.5em;
+		font-weight: lighter;
+	}
+
+	.contact h2{
+		margin: 15% 5% 0 5%;
+	}
+	.contact p{
+		/* margin: 5%; */
+	}
+
+	form label{
+		margin-bottom: 10%;
+	}
+	form button{
+		width: 40vw;
+		padding: 4%;
+	}
+  
 
 	footer h2{
 		padding-bottom: 7.5%;
