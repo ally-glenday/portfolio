@@ -442,12 +442,60 @@ td{
 	background-color: aliceblue;
 } */
 
-.big-text{
+.contact h2{
+	color: white;
+	font-size: 2em;
+	margin: 20% 5% 10% 5%;
+}
+
+.contact p{
 	color: white;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 2em;
+	font-size: 1em;
 	padding: 5%;
+}
+
+form{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	/* justify-items: center; */
+	margin: 5%;
+	
+}
+
+form label{
+	color: white;
+	font-size: 1.3em;
+	margin-bottom: 15%;
+	
+	
+}
+
+form input, form textarea{
+	display: block;
+	width: 100%;
+	margin-top: 5%;
+	border-radius: 5px;
+	border: 1px white solid;
+}
+
+form input{
+	height: 50%;
+}
+form textarea{
+	height: 100%;
+}
+
+form button{
+	color: white;
+	border: 2px solid white;
+	border-radius: 50px;
+	width: 50%;
+	justify-self: center;
+	padding: 5%;
+	margin: 10% 0 10% 0;
 }
 
 footer{
