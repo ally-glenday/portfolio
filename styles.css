@@ -105,8 +105,14 @@ a {
 	height: 100%;
 	--gradient-color-1: #0d2e00; 
 	--gradient-color-2: #6ec3f4; 
+	--gradient-color-3: #968ab4;  
+	--gradient-color-4: #5d8f63;
+
+
+	/* --gradient-color-1: #0d2e00; 
+	--gradient-color-2: #6ec3f4; 
 	--gradient-color-3: #b1a4d2;  
-	--gradient-color-4: #d0d1d1;
+	--gradient-color-4: #d0d1d1; */
 
 
 	/* green yellow & red version colours #4CD4B0
@@ -387,13 +393,21 @@ td{
 	margin: 5%;
 	padding: 10% 0; */
 }
+.img-flex-container{
+	display: flex;
+	justify-content: center;
+}
 .project-image-link{
 	display: flex;
 	align-self: center;
 	width: 100vw;
 	height: auto;
 	margin: 10% 0 10% 0;
-	
+}
+.project-image-link{
+	width: 80vw;
+	border-radius: 10px;
+	border: 1px lightgray solid;
 }
 .project-image-link:last-of-type{
 	padding: 0;
@@ -436,7 +450,16 @@ td{
 	float: right;
 	background-color: aliceblue;
 } */
+#final-message{
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 20% 5% 20% 5%;
+	padding: 10%;
+	border: 1px white solid;
+	border-radius: 5px;
 
+}
 .contact-form-section{
 	background-color: rgb(0, 0, 0);
 	z-index: 0;
@@ -519,6 +542,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	font-size: .8em;
+	margin-top: 10%;
+	border-top: 1px rgb(177, 177, 177) solid;
+	padding-top: 10%;
 }
 .footer-grid-container p + .footer-grid-container a{
 	margin: 5% 0;
@@ -671,8 +697,10 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		margin-bottom: 10%;
 	}
 	form button{
-		width: 40vw;
-		padding: 4%;
+		/* width: 40vw;
+		padding: 4%; */
+		padding: 3%;
+		width: 30%;
 	}
   
 
