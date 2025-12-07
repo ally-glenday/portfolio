@@ -377,7 +377,12 @@ td{
 }
 
 /*----------------------- Temp projects section -------------------------*/
-
+.projects-grid-container{
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	/* grid-template-rows: 1fr; */
+	/* margin: 5%; */
+}
 #projects{
 	margin: 5%;
 	/* padding: 30% 0 15% 0; */
@@ -394,21 +399,24 @@ td{
 	padding: 10% 0; */
 }
 .img-flex-container{
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
+	grid-column-start: 1;
+	grid-column-end: 8;
+	margin: 5%
 }
 .project-image-link{
-	display: flex;
-	align-self: center;
-	width: 100vw;
+	width: 100%;
 	height: auto;
-	margin: 10% 0 10% 0;
-}
-.project-image-link{
-	width: 80vw;
+	/* margin: 10% 0 10% 0; */
 	border-radius: 10px;
 	border: 1px lightgray solid;
 }
+/* .project-image-link{
+	width: 80vw;
+	border-radius: 10px;
+	border: 1px lightgray solid;
+} */
 .project-image-link:last-of-type{
 	padding: 0;
 	/* margin-bottom: 50%; */
@@ -419,18 +427,12 @@ td{
 
 .project-number{
 
+	/* margin: 10%; */
 }
 .project-text h4{
 	margin-bottom: 2%;
 }
 
-.projects-grid-container{
-	display: grid;
-	grid-template-columns: 1fr;
-	/* grid-template-columns: 1fr 8fr;
-	margin: 5%; */
-
-}
 
 
 
