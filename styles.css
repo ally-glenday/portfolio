@@ -378,10 +378,9 @@ td{
 
 /*----------------------- Temp projects section -------------------------*/
 .projects-grid-container{
-	display: grid;
-	grid-template-columns: 1fr 8fr;
-	/* grid-template-rows: 1fr; */
-	/* margin: 5%; */
+	/* display: grid;
+	grid-template-columns: 1fr 8fr; */
+
 }
 #projects{
 	margin: 5%;
@@ -398,13 +397,11 @@ td{
 	margin: 5%;
 	padding: 10% 0; */
 }
-.img-flex-container{
-	/* display: flex;
-	justify-content: center; */
+/* .img-flex-container{
 	grid-column-start: 1;
 	grid-column-end: 8;
 	margin: 5%
-}
+} */
 .project-image-link{
 	width: 100%;
 	height: auto;
@@ -433,7 +430,30 @@ td{
 	margin-bottom: 2%;
 }
 
+/*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* gap: 0.5rem 1rem; */
+	margin: 10%;
+}
 
+.project-number {
+    grid-column: 1;
+}
+
+.project-title {
+    grid-column: 2;
+}
+
+.project-description {
+    grid-column: 2 / -1; 
+}
+
+.project-image {
+    grid-column: 1 / -1; /* full width */
+}
+/*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
 
 
 /* .projects-flexbox-container{
@@ -780,3 +800,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 	
   }
+
+
+
+ 
