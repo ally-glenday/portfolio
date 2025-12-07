@@ -384,7 +384,7 @@ td{
 }
 #projects{
 	margin: 5%;
-	/* padding: 30% 0 15% 0; */
+	padding: 20% 0 5% 0;
 }
 
 .projects-flexbox-container{
@@ -435,7 +435,8 @@ td{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.5rem 1rem;
-	margin: 10%;
+	margin: 7.5%;
+	
 }
 
 .project-number {
@@ -448,10 +449,13 @@ td{
 
 .project-description {
     grid-column: 2 / -1; 
+	font-size: .7rem;
+	margin-bottom: 10%;
 }
 
 .project-image {
     grid-column: 1 / -1; /* full width */
+	margin-bottom: 30%;
 }
 /*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
 
@@ -702,6 +706,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 
 	.projects-grid-container {
 		grid-template-columns: 1fr 1fr;
+		border-bottom: 1px solid black;
 	}
 	
 	.project-number{
@@ -752,6 +757,10 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		font-size: 1em;
 		margin: 5% 10%;
 	}
+
+	.project-number{
+		font-size: 5rem;
+	}
   }
 
 @media only screen and (min-width: 1080px) {
@@ -785,8 +794,20 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	.skills-flex-container{
 		font-size: 1em;
 	}
+	.projects-grid-container{
+		grid-template-columns: 1fr 1fr;
+	}
+	.project-title{
+		font-size: 2rem;
+	}
+	.project-description{
+		font-size: .8rem;
+	}
+	.project-image {
+		grid-column: 2 / -1; /* full width */
+	}
 	.contact{
-		width: 60vw;
+		width: 50vw;
 		margin: 0 auto;
 	}
 	.contact h2{
