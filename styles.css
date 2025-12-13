@@ -103,9 +103,15 @@ a {
 	/* Added code */
 	width: 100%;
 	height: 100%;
+	/* --gradient-color-1: #b2c2bd;
+	--gradient-color-2: #5b8088; 
+	--gradient-color-3: #4a5757;  
+	--gradient-color-4: #4c5959; */
+
+
 	--gradient-color-1: #0d2e00; 
 	--gradient-color-2: #6ec3f4; 
-	--gradient-color-3: #968ab4;  
+	--gradient-color-3: #968ab4;  	
 	--gradient-color-4: #5d8f63;
 
 
@@ -143,14 +149,32 @@ body {
 a.japanese-page{
 	color: white;
 }
-.japanese-page{
+/* ME */
+/* .japanese-page{
 	display: flex;
 	align-self: flex-end;
 	border: 1px solid white;
 	border-radius: 50%;
 	padding: 5%;
 	margin: 5%;
-}
+} */
+/* CHAT GPT */
+.japanese-page {
+	width: clamp(70px, 4vw, 56px);
+	height: clamp(70px, 4vw, 56px);
+  
+	display: flex;
+	align-self: flex-end;
+	align-items: center;
+	justify-content: center;
+  
+	border: 1px solid white;
+	border-radius: 50%;
+  
+	margin: 5%;
+	padding: 0;
+  }
+
 .japanese-page:hover, form button:hover{
 	background-color: rgba(255, 255, 255, 0.164);
 	transition: .5s;
@@ -295,8 +319,11 @@ h1{
 	background-color: white;
 	padding: 7.5% 5% 5% 5%;
 }
+#about h2{
+	padding: 15% 0;
+}
 #about h2, #about p{
-	/* margin: 5%; */
+	margin: 5%;
 }
 
 .flex-container{
@@ -340,7 +367,7 @@ th{
 }
 
 td{
-	font-size: 1em;
+	font-size: .7em;
 	border-top: 1px solid;
 	padding: 5% 0;
 
@@ -378,6 +405,7 @@ td{
 
 /*----------------------- Temp projects section -------------------------*/
 .projects-grid-container{
+	border-bottom: 1px solid black;
 	/* display: grid;
 	grid-template-columns: 1fr 8fr; */
 
@@ -450,11 +478,14 @@ td{
 .project-description {
     grid-column: 2 / -1; 
 	font-size: .7rem;
+	color: rgb(87, 87, 87);
 	margin-bottom: 10%;
+
 }
 
 .project-image {
-    grid-column: 1 / -1; /* full width */
+	grid-column: 1 / -1; /* full width */
+    /* grid-column: 1 / -1 ; */
 	margin-bottom: 30%;
 }
 /*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
@@ -705,13 +736,27 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 
 	.projects-grid-container {
-		grid-template-columns: 1fr 1fr;
-		border-bottom: 1px solid black;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		/* gap: 5vw; */
 	}
-	
+
 	.project-number{
 		font-size: 1.5em;
 		font-weight: lighter;
+		grid-area: 1 / 1;
+	}
+	.project-title{
+		grid-area: 1 / 2 / 1 / 2;	
+		font-size: 1.2em;
+	}
+	.project-description{
+		grid-area: 1 / 2 / 1 / 2;
+		margin-top: 15%;	
+	}
+
+	.project-image {
+		grid-area: 1 / 3 / 2 / 3;
 	}
 
 	.contact h2{
@@ -759,7 +804,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 
 	.project-number{
-		font-size: 5rem;
+		font-size: 2rem;
 	}
   }
 
@@ -794,18 +839,16 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	.skills-flex-container{
 		font-size: 1em;
 	}
-	.projects-grid-container{
+	/* .projects-grid-container{
 		grid-template-columns: 1fr 1fr;
-	}
+	} */
 	.project-title{
-		font-size: 2rem;
+		/* font-size: 2rem; */
 	}
 	.project-description{
 		font-size: .8rem;
 	}
-	.project-image {
-		grid-column: 2 / -1; /* full width */
-	}
+	
 	.contact{
 		width: 50vw;
 		margin: 0 auto;
