@@ -325,6 +325,9 @@ h1{
 #about h2, #about p{
 	margin: 5%;
 }
+div .about-flex-item{
+	line-height: 1.6em;
+}
 
 .flex-container{
 	display: flex;
@@ -508,14 +511,14 @@ td{
 	float: right;
 	background-color: aliceblue;
 } */
-#final-message{
+.final-message{
 	color: white;
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height: 1.5em;
-	margin: 20% 5% 20% 5%;
-	padding: 10%;
-	border: 1px white solid;
-	border-radius: 5px;
+	margin: 10% 5%;
+	/* padding: 10%; */
+	/* border: 1px white solid; */
+	/* border-radius: 5px; */
 
 }
 .contact-form-section{
@@ -583,12 +586,12 @@ footer{
 	padding: 5%;
 	font-weight: lighter;
 }
-footer h2{
+/* footer h2{
 	color: white;
 	text-transform: uppercase;
 	font-size: 2em;
 	padding-bottom: 10%;
-}
+} */
 footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	color: white;
 	/* margin: 5% 0; */
@@ -599,7 +602,8 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 .footer-grid-container{
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
-	font-size: .8em;
+	/* align-items: center; */
+	font-size: .5em;
 	margin-top: 10%;
 	border-top: 1px rgb(177, 177, 177) solid;
 	padding-top: 10%;
@@ -619,6 +623,12 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	display: grid;
 	gap: 1%;
 }
+.footer-grid-item:nth-of-type(2){
+	gap: 50%;
+}
+.footer-grid-item:nth-of-type(3){
+	gap: 50%;
+}
 .footer-grid-item p{
 	/* color: rgb(188, 188, 188); */
 }
@@ -627,7 +637,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	display: flex;
 	justify-content: center;
 	font-size: .6em;
+	letter-spacing: .1em;
 	margin-top: 20%;
+	
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
@@ -645,6 +657,11 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	/* nav ul{
 		display: flex;
 	} */
+	 #about h2{
+		padding: 0;
+		font-size: 5vw;
+	 }
+
 	.japanese-page{
 		padding: 2.5%;
 	}
@@ -664,6 +681,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		width: initial;
 		margin: initial;
 	}
+
 	.temp-background > h1:nth-child(1) > span:nth-child(1) {
 		font-size: 1.5em;
 		line-height: 1.3em;
