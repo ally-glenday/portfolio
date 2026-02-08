@@ -334,12 +334,13 @@ div .about-flex-item{
 	line-height: 1.6em;
 }
 
-.flex-container{
+/* .flex-container{
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
 	margin-bottom: 20%;
-}
+} */
+
 /* Wrapper for main content for margin and spacing */
 /* .main-wrapper{
 	margin: 7.5%;
@@ -474,40 +475,48 @@ td{
 	margin: 10%;
 	background-color: white;
 	overflow: hidden; /* Keeps corners inside parent element */ 
-}
-
-.flex-container{
-	display: flex;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .project-image{
 	width: 100%;
+	height: auto;
 }
 .project-title{
-	
+	margin-top: 5%;
 }
 .project-description{
 	font-size: 3vw;
 	color: #545454;
 	margin-right: 5%;
 }
+.projects-link-number-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7.5%;
+}
 .project-link{
 	font-size: 2.5vw;
+	border-radius: 30px;
 	color: white;
 	background-color: #2A2A2A;
-	padding: 5%;
+	padding: 2.5% 7.5%;
+	align-content: center;
 }
 .project-link:visited, .project-link:active{
 	color: white;
 }
 .project-link:hover{
-	color: red;
+	color: white;
 }
 .project-number{
+	color: #444444;
 	margin-right: 5%;
+	align-self: self-end;
 }
 .project-title, .project-description, .project-link{
 	margin-left: 10%;
+	margin-bottom: 5%;
 }
 
 /*-- New project cards styles end  */
@@ -807,7 +816,26 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	#projects{
 		padding: 10% 0 5% 0;
 	}
-
+	.projects-card{
+		margin: 2.5%;
+	}
+	.projects-cards-container{
+		display: flex;
+		margin: 5%;
+	}
+	.project-title{
+		font-size: 2vw;
+	}
+	.project-description{
+		font-size: 1vw;
+	}
+	.project-link{
+		font-size: 1vw;
+	}
+	.project-number{
+		font-size: 2vw;
+		font-weight: lighter;
+	}
 	.projects-grid-container {
 		/* grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr; */
@@ -876,9 +904,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		margin: 5% 10%;
 	}
 
-	.project-number{
-		font-size: 2rem;
-	}
+	
   }
 
 @media only screen and (min-width: 1080px) {
@@ -915,11 +941,19 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	/* .projects-grid-container{
 		grid-template-columns: 1fr 1fr;
 	} */
+	
+
 	.project-title{
-		/* font-size: 2rem; */
+
 	}
 	.project-description{
-		font-size: .8rem;
+
+	}
+	.project-link{
+		
+	}
+	.project-number{
+
 	}
 	
 	.contact{
