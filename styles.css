@@ -483,6 +483,12 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	overflow: hidden; /* Keeps corners inside parent element */ 
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.projects-card{
+	transition: 1s;
+}
+.projects-card:hover{
+	transform: scale(1.05);
+}
 
 .project-image{
 	width: 100%;
