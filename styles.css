@@ -368,18 +368,22 @@ section h3{
 table{
 	width: 100%;
 	text-align: left;
-	font-size: .7em;
+	/* font-size: .7em; */
 }
 
 th{
+	font-size: 5vw;
 	padding-bottom: 5%;
 }
 
 td{
-	font-size: .7em;
+	font-size: 3.5vw;
 	border-top: 1px solid;
 	padding: 5% 0;
+}
 
+thead th:nth-child(2), table tr td:nth-child(2) {
+	padding-left: 5%; /* Styles the second TD in every row */
 }
 
 /* .p5-sketch-2{
@@ -425,7 +429,7 @@ td{
 }
 
 .projects-flexbox-container{
-	/* margin: 5%; */
+	/* padding-bottom: 15%; */
 }
 .projects-flexbox-container h4{
 	/* text-transform: uppercase;
@@ -468,7 +472,9 @@ td{
 }
 
 /*-- New project cards styles start */
-
+.projects-cards-container{
+	padding-bottom: 15%;
+}
 .projects-card{
 	/* border: solid 1px black; */
 	border-radius: 5%;
@@ -481,6 +487,7 @@ td{
 .project-image{
 	width: 100%;
 	height: auto;
+	opacity: 85%;
 }
 .project-title{
 	margin-top: 5%;
@@ -521,60 +528,11 @@ td{
 
 /*-- New project cards styles end  */
 
-/*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
 
-/* 
-.projects-grid-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.5rem 1rem;
-	margin: 7.5%;
-	
+.final-message-heading{
+	font-size: 10vw;
+	color: white;
 }
-
-.project-number {
-    grid-column: 1;
-}
-
-.project-title {
-    grid-column: 2;
-}
-
-.project-description {
-    grid-column: 2 / -1; 
-	font-size: .7rem;
-	color: rgb(87, 87, 87);
-	margin-bottom: 10%;
-
-}
-
-.project-image {
-	grid-column: 1 / -1; 
-   
-	margin-bottom: 30%;
-} */
-
-
-/*------------------- CHAT GPT STYLES FOR GRID ----------------------- */
-
-
-/* .projects-flexbox-container{
-	display: flex;
-}
-
-.project-one{
-	width: 50vw;
-	height: 50vh;
-	background-image: url(assets/email-validator.jpg);
-	background-size: cover;
-}
-.project-one-text{
-	display: inline;
-	width: 50vw;
-	height: 50vh;
-	float: right;
-	background-color: aliceblue;
-} */
 .final-message{
 	color: white;
 	font-size: 1em;
@@ -667,7 +625,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	/* align-items: center; */
-	font-size: .5em;
+	font-size: 3vw;
 	margin-top: 10%;
 	border-top: 1px rgb(177, 177, 177) solid;
 	padding-top: 10%;
@@ -700,8 +658,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 .copyright{
 	display: flex;
 	justify-content: center;
-	font-size: .6em;
-	letter-spacing: .1em;
+	font-size: 3vw;
 	margin-top: 20%;
 	
 }
@@ -755,6 +712,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		padding: 0;
 	}
 	section h3{
+		font-size: 5vw;
 		margin: 10% 0 5% 0;
 	}
 	
@@ -771,9 +729,11 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 
     th{
+		font-size: 3vw;
 		padding-bottom: 2.5%;
     }
 	td{
+		font-size: 2.5vw;
 		padding: 2.5% 0;
 	}
 	#stand-out-text{
@@ -925,12 +885,17 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	p.about-flex-item{
 		font-size: 1.2em;
 	}
-	#about > h3:nth-child(2){
-		font-size: 1.5em;
+	section h3{
+		font-size: 3vw;
 	}
-	table{
-		font-size: 1.2em;
+	th{
+		font-size: 2vw;
+    }
+	td{
+		font-size: 1.5vw;
+		padding: 2.5% 0;
 	}
+
 	#stand-out-text{
 		font-size: 1.4em;
 		margin: 10% 5%;
@@ -942,6 +907,14 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		grid-template-columns: 1fr 1fr;
 	} */
 	
+	.projects-card{
+		/* border: solid white 2px; */
+	}
+	.projects-card:hover{
+		/* transition: width 2s; */
+		
+
+	}
 
 	.project-title{
 
