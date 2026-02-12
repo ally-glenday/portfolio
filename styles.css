@@ -303,7 +303,7 @@ h1{
 /* Hero image p tag */ 
 .hero-text-flex-container p{
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 2vw;
 	margin: 15% 5%;
 }
 
@@ -756,9 +756,10 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		padding: 2.5% 0;
 	}
 	#stand-out-text{
-		font-size: 1.5em;
-		padding: 10% 5% 0 5%;
-		margin: 12.5% 0 12.5% 0;
+		/* text-align: center; */
+		font-size: 8vw;
+		padding: 2.5%;
+		margin: 2.5%;
 	}
 	.offset-word{
 		display: block;
@@ -886,12 +887,15 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		margin: 5% 10%;
 	}
 	.final-message h4, .final-message p{
-		font-size: 1.5vw;
+		font-size: 1.2vw;
 		padding: 0;
 		margin: 0;
 	}
+	.final-message h4{
+		font-size: 2vw;
+	}
 	.final-message p{
-		line-height: 3vw;
+		line-height: 2.3vw;
 	}
 	.final-message-flex-container{
 		display: flex;
@@ -928,8 +932,12 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		top: 20vh;
 	}
 	
-	p.about-flex-item{
-		font-size: 1.2em;
+	#about h2{
+		font-size: 3vw;	
+	}
+	#about p{
+		font-size: 1.2vw;
+		margin: 0 10% 0 10%;
 	}
 	section h3{
 		font-size: 3vw;
@@ -943,10 +951,10 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 
 	#stand-out-text{
-		font-size: 1.4em;
-		margin: 10% 5%;
+		font-size: 4vw;
+		margin: 5% 0 5% 0;
 	}
-	.skills-flex-container{
+	.skills-flex-container{	
 		font-size: 1em;
 	}
 	/* .projects-grid-container{
@@ -1003,7 +1011,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		/* align-items: center; */
-		font-size: 3vw;
+		font-size: 2vw;
 		margin-top: 10%;
 		border-top: 1px rgb(177, 177, 177) solid;
 		padding-top: 10%;
@@ -1040,7 +1048,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 	.footer-grid-container{
 		grid-template-columns: 3fr 1fr 1fr;
-		font-size: 1.5vw;
+		font-size: 1.2vw;
 	}
 	footer{
 		/* font-size: 1.2em; */
