@@ -350,9 +350,9 @@ section h2{
 	font-size: 2em;
 	padding: 20% 0;
 }
-section p:first-of-type{
+/* section p:first-of-type{
 	line-height: 1.75em;
-}
+} */
 
 .paragraph-break{
 	display: block;
@@ -482,18 +482,21 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	background-color: white;
 	overflow: hidden; /* Keeps corners inside parent element */ 
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.projects-card{
-	transition: 1s;
+	transition: 1.5s;
 }
 .projects-card:hover{
-	transform: scale(1.05);
+	transform: scale(1.1);
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px;
 }
 
 .project-image{
 	width: 100%;
 	height: auto;
 	opacity: 85%;
+	transition: 1s;
+}
+.project-image:hover{
+	opacity: 100%;
 }
 .project-title{
 	margin-top: 5%;
@@ -515,6 +518,10 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	background-color: #2A2A2A;
 	padding: 2.5% 7.5%;
 	align-content: center;
+	transition: 1s;
+}
+.project-link{
+	
 }
 .project-link:visited, .project-link:active{
 	color: white;
@@ -534,21 +541,24 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 
 /*-- New project cards styles end  */
 
-
-.final-message-heading{
-	font-size: 10vw;
-	color: white;
-}
-.final-message{
-	color: white;
-	font-size: 1em;
-	line-height: 1.5em;
-	margin: 10% 5%;
+.final-message-heading, .final-message{
+	background-color: white;
+	color: black;
 	/* padding: 10%; */
-	/* border: 1px white solid; */
-	/* border-radius: 5px; */
-
 }
+.final-message-heading{
+	font-size: 8vw;
+	padding: 20% 10% 5% 10%;
+}
+.final-message p{
+	font-size: 4vw;
+	line-height: 8vw;
+	padding: 2.5% 10%;
+}
+.final-message p:last-of-type{
+	padding-bottom: 20%;
+}
+
 .contact-form-section{
 	background-color: rgb(0, 0, 0);
 	z-index: 0;
@@ -787,7 +797,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 	.projects-cards-container{
 		display: flex;
-		margin: 5%;
+		padding: 5%;
 	}
 	.project-title{
 		font-size: 2vw;
