@@ -417,16 +417,20 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 }
 
 /*----------------------- Temp projects section -------------------------*/
+
+#projects{
+	padding: 20% 10% 5% 10%;
+}
 .projects-grid-container{
 	border-bottom: 1px solid black;
 	/* display: grid;
 	grid-template-columns: 1fr 8fr; */
 
 }
-#projects{
+/* #projects{
 	margin: 5%;
 	padding: 20% 0 5% 0;
-}
+} */
 
 .projects-flexbox-container{
 	/* padding-bottom: 15%; */
@@ -676,7 +680,6 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	justify-content: center;
 	font-size: 3vw;
 	margin-top: 20%;
-	
 }
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
@@ -790,7 +793,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 
 	#projects{
-		padding: 10% 0 5% 0;
+		padding: 10% 10% 0 5%;
 	}
 	.projects-card{
 		margin: 2.5%;
@@ -853,11 +856,14 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		width: 30%;
 	}
   
-
+	.footer-grid-container{
+		font-size: 2vw;
+	}
 	footer h2{
 		padding-bottom: 7.5%;
 	}
 	.copyright{
+		font-size: 2vw;
 		margin-top: 10%;
 	}
 		
@@ -878,6 +884,17 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	.hero-text-flex-container p{
 		font-size: 1em;
 		margin: 5% 10%;
+	}
+	.final-message h4, .final-message p{
+		font-size: 1.5vw;
+		padding: 0;
+		margin: 0;
+	}
+	.final-message-flex-container{
+		display: flex;
+	}
+	.final-message-flex-item{
+		width: 50%;
 	}
 
 	
@@ -968,19 +985,61 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		/* padding: 3%;
 		width: 30%; */
 	}
-	footer{
-		font-size: 1.2em;
-	}
 
-	footer h2{
-		padding-bottom: 5%;
+	.footer-grid-container{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		/* align-items: center; */
+		font-size: 3vw;
+		margin-top: 10%;
+		border-top: 1px rgb(177, 177, 177) solid;
+		padding-top: 10%;
 	}
+	.footer-grid-container p + .footer-grid-container a{
+		margin: 5% 0;
+	}
+	.footer-grid-container a{
+		display: block;
+	}
+	.footer-grid-item:not(:first-child){
+		display: grid;
+		gap: 25%;
+		/* margin-top: 50%; */
+	}
+	.footer-grid-item:first-child{
+		display: grid;
+		gap: 1%;
+	}
+	.footer-grid-item:nth-of-type(2){
+		gap: 35%;
+	}
+	.footer-grid-item:nth-of-type(3){
+		gap: 35%;
+	}
+	.footer-grid-container a:hover{
+		text-decoration: underline;
+	}
+	
 	.copyright{
-		
+		display: flex;
+		justify-content: center;
+		font-size: 3vw;
 	}
 	.footer-grid-container{
 		grid-template-columns: 3fr 1fr 1fr;
+		font-size: 1.5vw;
 	}
+	footer{
+		/* font-size: 1.2em; */
+	}
+
+	footer h2{
+		/* padding-bottom: 5%; */
+	}
+	.copyright{
+		font-size: 1vw;
+	}
+
 	
   }
 
