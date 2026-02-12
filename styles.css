@@ -527,7 +527,7 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 .project-link{
 	
 }
-.project-link:visited, .project-link:active{
+.project-link, .project-link:visited, .project-link:active{
 	color: white;
 }
 .project-link:hover{
@@ -889,6 +889,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		font-size: 1.5vw;
 		padding: 0;
 		margin: 0;
+	}
+	.final-message p{
+		line-height: 3vw;
 	}
 	.final-message-flex-container{
 		display: flex;
