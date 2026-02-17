@@ -494,18 +494,18 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	background-color: white;
 	overflow: hidden; /* Keeps corners inside parent element */ 
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	transition: 1.5s;
+	/* transition: 1.5s; */
 }
-.projects-card:hover{
+/* .projects-card:hover{
 	transform: scale(1.1);
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px;
-}
+} */
 
 .project-image{
 	width: 100%;
 	height: auto;
-	opacity: 85%;
-	transition: 1s;
+	/* opacity: 85%;
+	transition: 1s; */
 }
 .project-image:hover{
 	opacity: 100%;
