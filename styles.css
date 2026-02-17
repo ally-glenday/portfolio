@@ -419,7 +419,7 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	margin-bottom: 30%;	
 }
 #stand-out-text{
-	font-size: 1em;
+	font-size: 10vw;
 	line-height: 1.5em;
 	margin: 15vh 0 20vh 0;
 }
@@ -529,9 +529,11 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	border-radius: 30px;
 	color: white;
 	background-color: #2A2A2A;
-	padding: 2.5% 7.5%;
+	padding: 5% 15%;
 	align-content: center;
-	transition: 1s;
+	font-size: 4vw;
+	margin: 2.5%;
+	/* transition: 1s; */
 }
 .project-link:link, .project-link:hover, .project-link:visited, .project-link:active{
 	color: white;
@@ -818,6 +820,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	.project-link{
 		font-size: 1vw;
 		transition: 1s;
+		padding: 2.5% 10%;
 	}
 	.project-number{
 		font-size: 2vw;
