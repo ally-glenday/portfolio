@@ -514,7 +514,8 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	margin-top: 5%;
 }
 .project-description{
-	font-size: 3vw;
+	font-size: 3.5vw;
+	line-height: 1.5;
 	color: #545454;
 	margin-right: 5%;
 }
@@ -819,10 +820,34 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	}
 	.project-link{
 		font-size: 1vw;
+		transition: 1s;
 	}
 	.project-number{
 		font-size: 2vw;
 		font-weight: lighter;
+	}
+	.project-image{
+		/* width: 100%;
+		height: auto; */
+		opacity: 85%;
+		transition: 1s;
+	}
+	.project-image:hover{
+		opacity: 100%;
+	}
+	.projects-card{
+		transition: 2s;
+	}
+	.projects-card:hover{
+		transform: scale(1.1);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 50px;
+	}
+	
+	.project-image{
+		width: 100%;
+		height: auto;
+		opacity: 85%;
+		transition: 1s;
 	}
 	.projects-grid-container {
 		/* grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -918,7 +943,7 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		margin-left: 15%;
 	}
 	.final-message-flex-item:nth-of-type(2){
-		width: 40%;
+		width: 45%;
 		margin-right: 15%;
 	}
 
