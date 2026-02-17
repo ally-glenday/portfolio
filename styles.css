@@ -533,10 +533,7 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 	align-content: center;
 	transition: 1s;
 }
-.project-link{
-	
-}
-.project-link, .project-link:visited, .project-link:active{
+.project-link:link, .project-link:hover, .project-link:visited, .project-link:active{
 	color: white;
 }
 .project-link:hover{
