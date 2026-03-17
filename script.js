@@ -30,17 +30,15 @@ gradient.initGradient('#gradient-canvas')
 window.addEventListener("load", async () => {
     const track = document.querySelector(".name-track");
   
-    // 🧠 wait for fonts to load (THIS is the missing piece)
     await document.fonts.ready;
   
-    // duplicate content once
     track.innerHTML += track.innerHTML;
   
     const width = track.scrollWidth / 2;
   
-    gsap.set(track, { x: 0 });
+    let direction = -1; // default: move left
   
-    gsap.to(track, {
+    const tween = gsap.to(track, {
       x: "-=" + width,
       duration: 40,
       ease: "none",
@@ -49,7 +47,51 @@ window.addEventListener("load", async () => {
         x: gsap.utils.unitize(x => parseFloat(x) % width)
       }
     });
+  
+    // detect scroll direction
+    let lastScroll = window.scrollY;
+  
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.scrollY;
+  
+      if (currentScroll > lastScroll) {
+        direction = -1; // scrolling down → move left
+      } else {
+        direction = 1; // scrolling up → move right
+      }
+  
+      gsap.to(tween, {
+        timeScale: direction,
+        duration: 0.3
+      });
+  
+      lastScroll = currentScroll;
+    });
   });
+
+// window.addEventListener("load", async () => {
+//     const track = document.querySelector(".name-track");
+  
+//     // 🧠 wait for fonts to load (THIS is the missing piece)
+//     await document.fonts.ready;
+  
+//     // duplicate content once
+//     track.innerHTML += track.innerHTML;
+  
+//     const width = track.scrollWidth / 2;
+  
+//     gsap.set(track, { x: 0 });
+  
+//     gsap.to(track, {
+//       x: "-=" + width,
+//       duration: 40,
+//       ease: "none",
+//       repeat: -1,
+//       modifiers: {
+//         x: gsap.utils.unitize(x => parseFloat(x) % width)
+//       }
+//     });
+//   });
 
 /* ------ GSAP ------ */ 
  
