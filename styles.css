@@ -689,6 +689,26 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 	font-size: 3vw;
 	margin-top: 20%;
 }
+/*------- GSAP styles ------- */ 
+.name-marquee {
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  .name-track {
+	display: flex;
+	white-space: nowrap;
+	width: max-content;
+
+  }
+  
+/* ------------------------ */ 
+
+#infinite-scroll-text{
+	font-size: 6vw;
+	font-weight: 200;
+}
+
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
 @media only screen and (min-width: 320px){
 	.temp-background h1{
