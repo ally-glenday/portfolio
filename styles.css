@@ -713,8 +713,9 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 /* ------------------------ */ 
 
 #infinite-scroll-text{
-	font-size: 6vw;
+	font-size: 4vw;
 	font-weight: 200;
+	padding: 10%;
 }
 
 /* ------------------- MEDIA QUERIES (mobile first coded for 320px)------------------- */ 
