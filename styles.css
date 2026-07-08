@@ -429,7 +429,7 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 .keisai-note{
 	margin: 0 10% 0 10%;
 	line-height: 1.5;
-    font-size: 2vw;
+    font-size: 3vw;
 	height: 100%;
 	width: auto;
 }
