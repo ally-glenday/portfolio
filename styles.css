@@ -426,6 +426,10 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 
 /*----------------------- Temp projects section -------------------------*/
 
+.keisai-note{
+	margin: 7.5vw;
+}
+
 #projects{
 	padding: 20% 10% 5% 10%;
 }
