@@ -427,7 +427,11 @@ thead th:nth-child(2), table tr td:nth-child(2) {
 /*----------------------- Temp projects section -------------------------*/
 
 .keisai-note{
-	margin: 7.5vw;
+	margin: 0 10% 0 10%;
+	line-height: 1.5;
+    font-size: 2vw;
+	height: 100%;
+	width: auto;
 }
 
 #projects{
@@ -971,7 +975,12 @@ footer p, footer a, footer a:visited, footer a:active, footer a:link{
 		margin-right: 15%;
 	}
 
-	
+	.keisai-note{
+		margin: 5% 50% 10% 10%;
+		line-height: 1.5;
+		font-size: 2vw;
+		max-width: 50vw;
+	}
   }
 
 @media only screen and (min-width: 1080px) {
